@@ -1,0 +1,30 @@
+{
+  "name": "react-unmounter",
+  "version": "1.0.0",
+  "description": "Unmounts react components by observing the (parent of the) node the component was mounted to",
+  "author": "1stdibs.com, Inc.",
+  "scripts": {
+    "test": "mocha",
+    "gitlint": "node_modules/.bin/dibslint --git --warnings",
+    "lint": "dibslint --root=."
+  },
+  "main": "index.js",
+  "pre-commit": {
+    "run": [
+      "gitlint"
+    ]
+  },
+  "devDependencies": {
+    "dibslint": "^1.2.4",
+    "mocha": "^2.3.4",
+    "nodemon": "^1.8.1",
+    "pre-commit": "^1.1.2"
+  },
+  "dependencies": {
+    "lodash.iselement": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
+}
